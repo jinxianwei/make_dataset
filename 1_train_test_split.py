@@ -23,9 +23,9 @@ def one_cls_split(path_folder_images_png, cls_name):
     random.seed(0)
     split_rate = 0.2  # train:val=8:2
 
-    train_root = os.path.join("./train", cls_name)
+    train_root = os.path.join("./train_oir", cls_name)
     mk_file(train_root)
-    val_root = os.path.join("./val", cls_name)
+    val_root = os.path.join("./val_ori", cls_name)
     mk_file(val_root)
 
     train_list = []
